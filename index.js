@@ -7,6 +7,13 @@ var path = resolve(argv._[0] || process.cwd());
 var port = argv.p || argv.port || process.env.PORT || 9294;
 
 server = express.createServer();
+
+server.get('/cache.manifest', function(req, res){
+    res.header('Content-Type', 'text/cache-manifest');
+    res.sendfile('./public/manifest');
+});
+
+server.use(express.static('./public'));
 server.listen(port);
 
 console.log('Started server on: ' + port);
