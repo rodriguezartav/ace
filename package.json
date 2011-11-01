@@ -1,7 +1,7 @@
 { 
   "name": "ace_offline", 
   "description": "Fork from Ace to server Offline Manifest File", 
-  "version": "0.0.2", 
+  "version": "0.0.3", 
   "author": "rodriguezartav", 
   "repository": { 
     "type" : "git", 
@@ -9,7 +9,7 @@
   }, 
   "engine" : [ "node >=0.1.102" ], 
   "main" : "./index.js",
-  "bin": { "ace": "./index.js" },
+  "bin": { "ace_offline": "./index.js" },
   "dependencies" : { 
     "express": "~2.4.3",
     "optimist": "~0.2.6"
