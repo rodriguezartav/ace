@@ -1,7 +1,7 @@
 { 
   "name": "ace_offline", 
   "description": "Fork from Ace to server Offline Manifest File", 
-  "version": "0.0.1", 
+  "version": "0.0.2", 
   "author": "rodriguezartav", 
   "repository": { 
     "type" : "git", 
