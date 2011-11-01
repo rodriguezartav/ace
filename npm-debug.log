@@ -1,0 +1,114 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install', '.' ]
+info using npm@1.0.103
+info using node@v0.4.11
+verbose config file /Users/roberto/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/lib/node_modules/npm/npmrc
+silly testEngine { name: 'ace',
+silly testEngine   description: 'Simple static server.',
+silly testEngine   version: '0.0.1',
+silly testEngine   author: { name: 'maccman' },
+silly testEngine   licenses: 
+silly testEngine    [ { type: 'MIT',
+silly testEngine        url: 'https://github.com/maccman/ace/blob/master/LICENSE' } ],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/maccman/ace.git' },
+silly testEngine   engine: [ 'node >=0.1.102' ],
+silly testEngine   main: './index.js',
+silly testEngine   bin: { ace: './index.js' },
+silly testEngine   dependencies: { express: '~2.4.3', optimist: '~0.2.6' },
+silly testEngine   _npmUser: 
+silly testEngine    { name: 'rodriguezartav',
+silly testEngine      email: 'roberto@rodriguezartav.com' },
+silly testEngine   _id: 'ace@0.0.1',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _nodeVersion: 'v0.4.11',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   scripts: {} }
+verbose caching /Users/roberto/Dropbox/Proyectos/git_libs/ace/package.json
+verbose loadDefaults ace@0.0.1
+verbose where, deps [ '/Users/roberto/Dropbox/Proyectos/git_libs/ace',
+verbose where, deps   [ 'express', 'optimist' ] ]
+verbose from cache /Users/roberto/Dropbox/Proyectos/git_libs/ace/package.json
+info preinstall ace@0.0.1
+verbose from cache /Users/roberto/Dropbox/Proyectos/git_libs/ace/package.json
+verbose into /Users/roberto/Dropbox/Proyectos/git_libs/ace [ 'express@~2.4.3', 'optimist@~0.2.6' ]
+verbose cache add express@~2.4.3
+verbose cache add [ 'express@~2.4.3', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'express@~2.4.3',
+silly cache add: name, spec, args   [ 'express@~2.4.3', null ] ]
+verbose parsed url { pathname: 'express@~2.4.3', href: 'express@~2.4.3' }
+silly cache add: name, spec, args [ 'express', '~2.4.3', [ 'express', '~2.4.3' ] ]
+verbose parsed url { pathname: '~2.4.3', href: '~2.4.3' }
+info addNamed [ 'express', '~2.4.3' ]
+verbose addNamed [ null, '>=2.4.3 <2.5.0' ]
+verbose cache add optimist@~0.2.6
+verbose cache add [ 'optimist@~0.2.6', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'optimist@~0.2.6',
+silly cache add: name, spec, args   [ 'optimist@~0.2.6', null ] ]
+verbose parsed url { pathname: 'optimist@~0.2.6',
+verbose parsed url   href: 'optimist@~0.2.6' }
+silly cache add: name, spec, args [ 'optimist', '~0.2.6', [ 'optimist', '~0.2.6' ] ]
+verbose parsed url { pathname: '~0.2.6', href: '~0.2.6' }
+info addNamed [ 'optimist', '~0.2.6' ]
+verbose addNamed [ null, '>=0.2.6 <0.3.0' ]
+verbose GET optimist
+verbose raw, before any munging optimist
+verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+verbose url resolved https://registry.npmjs.org/optimist
+verbose etag "DTI468R3QG0YW4R11OI8XDCI1"
+verbose GET express
+verbose raw, before any munging express
+verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+verbose url resolved https://registry.npmjs.org/express
+verbose etag "DDUVO6PGLAVYUXR4GZU9GFAE5"
+verbose bad json Internal routing error
+verbose bad json 
+verbose bad json Sorry, we cannot connect to the intended server.
+verbose bad json 
+verbose bad json We have just been notified of this problem. We will correct it as soon as possible.
+verbose bad json 
+verbose bad json Feel free to contact us if you have any questions: support@iriscouch.com
+verbose bad json 
+ERR! registry error parsing json
+silly get cb [ 500,
+silly get cb   { 'content-type': 'text/plain',
+silly get cb     'content-length': '239' } ]
+ERR! SyntaxError: Unexpected token ILLEGAL
+ERR! Internal routing error
+ERR! 
+ERR! Sorry, we cannot connect to the intended server.
+ERR! 
+ERR! We have just been notified of this problem. We will correct it as soon as possible.
+ERR! 
+ERR! Feel free to contact us if you have any questions: support@iriscouch.com
+ERR!     at Object.parse (native)
+ERR!     at Request.callback (/usr/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:148:21)
+ERR!     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/main.js:346:18)
+ERR!     at Request.emit (events.js:64:17)
+ERR!     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/main.js:314:16)
+ERR!     at IncomingMessage.emit (events.js:81:20)
+ERR!     at HTTPParser.onMessageComplete (http.js:133:23)
+ERR!     at CleartextStream.ondata (http.js:1231:22)
+ERR!     at CleartextStream._push (tls.js:303:27)
+ERR!     at SecurePair.cycle (tls.js:577:20)
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 10.8.0
+ERR! command "node" "/usr/bin/npm" "install" "."
+ERR! cwd /Users/roberto/Dropbox/Proyectos/git_libs/ace
+ERR! node -v v0.4.11
+ERR! npm -v 1.0.103
+ERR! type unexpected_token
+ERR! arguments [ 'ILLEGAL' ]
+verbose exit [ 1, true ]
